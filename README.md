@@ -9,8 +9,7 @@ last-mile-delivery/
 ├── backend/     Node.js + Express + MongoDB REST API
 └── frontend/    React client
 ```
-## Deployed at 
-`https://delivery-platform-xi.vercel.app/`
+## Deployed at [https://delivery-platform-xi.vercel.app/]
 
 ## Features
 
