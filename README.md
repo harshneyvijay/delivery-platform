@@ -2,7 +2,8 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) application for managing last-mile delivery orders, drivers, pricing, and order lifecycle tracking.
 
-Deployed at [https://delivery-platform-xi.vercel.app/]
+- Deployed at [https://delivery-platform-xi.vercel.app/]
+
 
 ### Walkthrough 
 
