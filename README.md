@@ -4,22 +4,17 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application for managing
 
 ## Deployed at [https://delivery-platform-xi.vercel.app/]
 
-## Features
-
-- JWT + bcrypt authentication
-- Role-based access control: ADMIN, DISPATCHER, DRIVER
-- Order lifecycle management with server-side status transition validation
-- Full order status history (who changed what, and when)
-- Backend-authoritative delivery pricing calculation based on zone, weight, and COD
-- Driver assignment
-- Minimalist React UI wired to the real backend REST API
+## Walkthrough 
 
 Dashboard
 ![Dashboard](docs/dashboard.png)
+
 Orders
 ![Orders](docs/orders.png)
+
 Order Creation
 ![OrdersCreate](docs/orderCreation.png)
+
 Order Management
 
 ![OrdersManage](docs/orderManagement.png)
@@ -29,12 +24,24 @@ Pricing
 
 Pricing Configuration
 ![PricingConfig](docs/pricingConfig.png)
+
 Role-Based User Access Management
 ![RBAC](docs/users.png)
+
 Login/Register (RBAC)
 ![Login](docs/login.png)
 ![Register](docs/register.png)
 
+
+## Features
+
+- JWT + bcrypt authentication
+- Role-based access control: ADMIN, DISPATCHER, DRIVER
+- Order lifecycle management with server-side status transition validation
+- Full order status history (who changed what, and when)
+- Backend-authoritative delivery pricing calculation based on zone, weight, and COD
+- Driver and Dispatcher assignment
+- React-based frontend UI with backend REST API
 
 ## Project Structure
 
