@@ -2,13 +2,6 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) application for managing last-mile delivery orders, drivers, pricing, and order lifecycle tracking.
 
-## Project Structure
-
-```
-last-mile-delivery/
-├── backend/     Node.js + Express + MongoDB REST API
-└── frontend/    React client
-```
 ## Deployed at [https://delivery-platform-xi.vercel.app/]
 
 ## Features
@@ -20,6 +13,99 @@ last-mile-delivery/
 - Backend-authoritative delivery pricing calculation based on zone, weight, and COD
 - Driver assignment
 - Minimalist React UI wired to the real backend REST API
+
+Dashboard
+![Dashboard](docs/dashboard.png)
+Orders
+![Orders](docs/orders.png)
+Order Creation
+![OrdersCreate](docs/orderCreation.png)
+Order Management
+![OrdersManage](docs/orderManagement.png)
+Pricing
+![Pricing](docs/pricing.png)
+Pricing Configuration
+![PricingConfig](docs/pricingConfig.png)
+Role-Based User Access Management
+![RBAC](docs/users.png)
+Login/Register (RBAC)
+![Login](docs/login.png)
+![Register](docs/register.png)
+
+
+## Project Structure
+
+```
+last-mile-delivery/
+├── README.md
+├── DEPLOYMENT.md
+├── TECHNICAL_DOCUMENTATION.md
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js                     # MongoDB connection
+│   ├── controllers/
+│   │   ├── authController.js         # Register, login, current user
+│   │   ├── userController.js         # User CRUD
+│   │   ├── orderController.js        # Order CRUD, assign, status, history
+│   │   └── pricingController.js      # Pricing config CRUD
+│   ├── middleware/
+│   │   ├── authMiddleware.js         # JWT verification
+│   │   ├── roleMiddleware.js         # Role-based access control
+│   │   └── errorMiddleware.js        # Centralized error handling
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Order.js
+│   │   ├── PricingConfig.js
+│   │   └── OrderStatusHistory.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   ├── orderRoutes.js
+│   │   └── pricingRoutes.js
+│   ├── services/
+│   │   ├── pricingService.js         # Delivery fee calculation
+│   │   └── orderService.js           # Status transitions + history
+│   ├── utils/
+│   │   └── generateToken.js          # JWT signing helper
+│   ├── app.js                        # Express app setup
+│   ├── server.js                     # Server entrypoint
+│   ├── package.json
+│   └── .env.example
+│
+└── frontend/
+    ├── public/
+    │   └── index.html
+    ├── src/
+    │   ├── api/
+    │   │   ├── axiosClient.js        # Axios instance + auth interceptor
+    │   │   ├── authApi.js
+    │   │   ├── orderApi.js
+    │   │   ├── userApi.js
+    │   │   └── pricingApi.js
+    │   ├── components/
+    │   │   ├── Navbar.js
+    │   │   ├── PrivateRoute.js
+    │   │   └── StatusBadge.js
+    │   ├── context/
+    │   │   └── AuthContext.js        # Global auth state
+    │   ├── pages/
+    │   │   ├── Login.js
+    │   │   ├── Register.js
+    │   │   ├── Dashboard.js
+    │   │   ├── OrderList.js
+    │   │   ├── OrderCreate.js
+    │   │   ├── OrderDetails.js
+    │   │   ├── UserList.js
+    │   │   ├── UserForm.js
+    │   │   ├── PricingList.js
+    │   │   └── PricingForm.js
+    │   ├── App.js                    # Route definitions
+    │   ├── index.js                  # React entrypoint
+    │   └── index.css                 # Global styles
+    ├── package.json
+    └── .env.example
+```
 
 ## Prerequisites
 
