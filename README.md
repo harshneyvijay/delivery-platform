@@ -21,9 +21,12 @@ Orders
 Order Creation
 ![OrdersCreate](docs/orderCreation.png)
 Order Management
+
 ![OrdersManage](docs/orderManagement.png)
+
 Pricing
 ![Pricing](docs/pricing.png)
+
 Pricing Configuration
 ![PricingConfig](docs/pricingConfig.png)
 Role-Based User Access Management
