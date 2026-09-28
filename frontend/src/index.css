@@ -174,12 +174,12 @@ button:disabled {
   text-align: left;
   padding: 0.6rem 0.75rem;
   border-bottom: 1px solid #eee;
-  background-color: #f8c860;
+  background-color: #ffe5a2;
   font-size: 0.9rem;
 }
 
 .table th {
-  background-color: #f5ba3a;
+  background-color: #fddc8a;
   font-weight: 600;
 }
 
