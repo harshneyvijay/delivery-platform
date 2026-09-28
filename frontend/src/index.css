@@ -71,7 +71,7 @@ a {
 }
 
 .card {
-  background: #ffe59c;
+  background: #ffe5a2;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 1rem 1.25rem;
@@ -102,7 +102,7 @@ a {
   margin-bottom: 0.2rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #444;
+  color: #1c1c1c;
 }
 
 .form input,
@@ -138,7 +138,7 @@ button:disabled {
 }
 
 .form-inline {
-  background: #fff4c7;
+  background: #ffe5a2;
   display: flex;
   gap: 0.75rem;
   align-items: center;
@@ -146,7 +146,7 @@ button:disabled {
 }
 
 .form-inline select {
-  background: #fff4c7;
+  background: #ffe5a2;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -189,7 +189,7 @@ button:disabled {
   border-radius: 3px;
   font-size: 0.75rem;
   font-weight: 600;
-  background-color: #aa7a48;
+  background-color: #8b6237;
   color: #ffffff;
   border: 1px solid #cbd5e0;
 }
